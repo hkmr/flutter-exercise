@@ -9,18 +9,18 @@
 
 import 'dart:async';
 
-void main(){
+void main() {
 
-  StreamController<double> controller = new StreamController<double>();
+	StreamController<double> controller = new StreamController<double>();
 
-  final subscription = controller.stream.listen((double data) {
-    print(data);
-  });
+	final subscription = controller.stream.listen((double data) {
+		print(data);
+	});
 
-  controller.sink.add(12.0);
-  controller.sink.add(12.0);
-  controller.sink.add(12.0);
-  controller.sink.add(12.0);
-  controller.sink.add(12.0);
+	controller.sink.add(12.0);
+	controller.sink.add(12.0);
+	controller.sink.add(12.0);
+	controller.sink.add(12.0);
+	controller.sink.add(12.0);
 
 }
