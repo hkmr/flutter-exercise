@@ -13,6 +13,14 @@ void main(){
 
   StreamController<double> controller = new StreamController<double>();
 
-}
+  final subscription = controller.stream.listen((double data) {
+    print(data);
+  });
 
-// final myStream = NumberCreater
+  controller.sink.add(12.0);
+  controller.sink.add(12.0);
+  controller.sink.add(12.0);
+  controller.sink.add(12.0);
+  controller.sink.add(12.0);
+
+}
