@@ -6,13 +6,12 @@
 */
 
 extension ParsingNum on String {
-  int parseToInt(){
-    return int.parse(this);
-  }
+	int parseToInt(){
+		return int.parse(this);
+	}
 }
 
-void main(){
-
-  int val = '23'.parseToInt();
-  print(val);
+void main() {
+	int val = '23'.parseToInt();
+	print(val);
 }

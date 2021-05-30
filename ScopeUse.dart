@@ -34,33 +34,33 @@
 
 */
 
-void main(){
-  _A obj = new _A();
-  obj.publicPrint();
-  print(obj._name);
+void main() {
+	_A obj = new _A();
+	obj.publicPrint();
+	print(obj._name);
 
-  // B obj2 = new B(); // throws error for private constructor.
+	// B obj2 = new B(); // throws error for private constructor.
 }
 
 
 class _A {
 
-  String _name = 'Harsh';
+	String _name = 'Harsh';
 
-  void _privatePrint(){
-    print(_name);
-  }
+	void _privatePrint() {
+		print(_name);
+	}
 
-  void publicPrint(){
-    print(_name);
-  }
+	void publicPrint() {
+		print(_name);
+	}
 
 }
 
 class B {
 
-  B._(){
-    print('private constructor');
-  }
+	B._() {
+		print('private constructor');
+	}
 
 }
